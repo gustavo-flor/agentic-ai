@@ -18,7 +18,7 @@ npx skills add https://github.com/gustavo-flor/agentic-ai --skill <skill-name>
 
 | Skill Name | Purpose |
 |------------|---------|
-| spec-kit   |         |
+| ...        | ...     |
 
 ## Useful Links
 
