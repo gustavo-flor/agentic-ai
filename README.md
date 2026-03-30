@@ -4,7 +4,7 @@
 
 Skills are reusable capabilities for AI agents. Install them with a single command to enhance your agents with access to procedural knowledge.
 
-> Read about skills on [skills.sh](https://skills.sh)
+> Read about skills on [Agent Skills](https://agentskills.io)
 
 ### Getting Started
 
@@ -19,10 +19,6 @@ npx skills add https://github.com/gustavo-flor/agentic-ai --skill <skill-name>
 | Skill Name       | Purpose |
 |------------------|---------|
 | spec-kit         |         |
-| spring           |         |
-| spring-data-jdbc |         |
-| spring-data-jpa  |         |
-| spring-web       |         |
 
 ## Useful Links
 
