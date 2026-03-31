@@ -9,10 +9,10 @@ argument-hint: What feature are we planning?
 
 # Spec-Driven Development
 
-Turn a feature idea into a structured, reviewable spec before a single line of code is written. The workflow has three phases, each producing a file in `specs/<feature-name>/`. You move forward only when the user approves the current phase — this keeps the plan grounded in what they actually want.
+Turn a feature idea into a structured, reviewable spec before a single line of code is written. The workflow has three phases, each producing a file in `specs/<spec-name>/`. You move forward only when the user approves the current phase — this keeps the plan grounded in what they actually want.
 
 ```
-specs/<feature-name>/
+specs/<spec-name>/
 ├── requirements.md   ← Phase 1: What to build
 ├── design.md         ← Phase 2: How to build it
 └── tasks.md          ← Phase 3: Ordered implementation steps
@@ -24,12 +24,12 @@ Before writing anything, nail down the feature name and create the folder.
 
 1. If the user hasn't named the feature, propose a short slug (e.g., `user-auth`, `export-csv`).
 2. Confirm with the user the feature name (and also the slug).
-3. Add a number to the slug, it must be an increment of the last spec created.
-4. Create `specs/<feature-name>/` in the repo root. `<feature-name> = <number>-<slug>` (e.g., `001-user-auth`).
+3. Add a number to the slug, it must be an increment of the last spec created inside `specs/` (e.g., `001`, `002`).
+4. Create `specs/<spec-name>/` in the repo root. `<spec-name> = <number>-<spec-slug>` (e.g., `001-user-auth`, `002-export-csv`).
 
 Read `./references/templates/spec.md` before writing this file.
   
-Write `specs/<feature-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
+Write `specs/<spec-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
 
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
@@ -39,7 +39,7 @@ Write `specs/<feature-name>/spec.md`. This is a high-level overview of the featu
 
 Read `./references/templates/requirements.md` before writing this file.
 
-Write `specs/<feature-name>/requirements.md` using EARS notation for user stories:
+Write `specs/<spec-name>/requirements.md` using EARS notation for user stories:
 
 > `WHEN [condition/event] THE SYSTEM SHALL [expected behavior]`
 
@@ -55,7 +55,7 @@ Group stories by user-facing goal. For each story, list concrete acceptance crit
 
 Read `./references/templates/design.md` before writing this file.
 
-Write `specs/<feature-name>/design.md`. Every significant decision should trace back to a requirement. Use Mermaid for sequence/flow diagrams where it adds clarity; plain prose otherwise.
+Write `specs/<spec-name>/design.md`. Every significant decision should trace back to a requirement. Use Mermaid for sequence/flow diagrams where it adds clarity; plain prose otherwise.
 
 Cover:
 - High-level architecture and component responsibilities
@@ -75,7 +75,7 @@ Cover:
 
 Read `./references/templates/tasks.md` before writing this file.
 
-Write `specs/<feature-name>/tasks.md` as a checkbox list. Each task should:
+Write `specs/<spec-name>/tasks.md` as a checkbox list. Each task should:
 - Be small enough to complete in one sitting
 - Reference the requirement(s) it satisfies (e.g., `[REQ-2]`)
 - Be ordered so earlier tasks unblock later ones (foundations first)
