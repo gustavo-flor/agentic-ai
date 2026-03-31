@@ -24,11 +24,12 @@ Before writing anything, nail down the feature name and create the folder.
 
 1. If the user hasn't named the feature, propose a short slug (e.g., `user-auth`, `export-csv`). Confirm with them.
 2. Create `specs/<feature-name>/` in the repo root.
-3. Tell the user which phase you're starting and what you'll produce.
 
-Read `references/templates/spec.md` before writing this file.
+Read `./references/templates/spec.md` before writing this file.
 
 Write `specs/<feature-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
+
+**Iterate:** Share the draft. Ask: "Does this capture everything? Anything missing or off?" Revise until the user approves, then move to Phase 1.
 
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
@@ -36,7 +37,7 @@ Write `specs/<feature-name>/spec.md`. This is a high-level overview of the featu
 
 **Goal:** Capture *what* the system must do, in unambiguous terms the user can validate.
 
-Read `references/templates/requirements.md` before writing this file.
+Read `./references/templates/requirements.md` before writing this file.
 
 Write `specs/<feature-name>/requirements.md` using EARS notation for user stories:
 
@@ -52,7 +53,7 @@ Group stories by user-facing goal. For each story, list concrete acceptance crit
 
 **Goal:** Decide *how* the system will fulfill the requirements — before writing code.
 
-Read `references/templates/design.md` before writing this file.
+Read `./references/templates/design.md` before writing this file.
 
 Write `specs/<feature-name>/design.md`. Every significant decision should trace back to a requirement. Use Mermaid for sequence/flow diagrams where it adds clarity; plain prose otherwise.
 
@@ -72,7 +73,7 @@ Cover:
 
 **Goal:** Break the design into discrete, ordered implementation steps a developer can pick up one at a time.
 
-Read `references/templates/tasks.md` before writing this file.
+Read `./references/templates/tasks.md` before writing this file.
 
 Write `specs/<feature-name>/tasks.md` as a checkbox list. Each task should:
 - Be small enough to complete in one sitting
@@ -93,6 +94,6 @@ If the user drops in mid-workflow (e.g., they already have a `requirements.md`),
 
 # References
 
-- `references/templates/requirements.md` — requirements file template (read at Phase 1)
-- `references/templates/design.md` — design file template (read at Phase 2)
-- `references/templates/tasks.md` — tasks file template (read at Phase 3)
+- `./references/templates/requirements.md` — requirements file template (read at Phase 1)
+- `./references/templates/design.md` — design file template (read at Phase 2)
+- `./references/templates/tasks.md` — tasks file template (read at Phase 3)

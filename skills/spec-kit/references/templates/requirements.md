@@ -1,3 +1,7 @@
+---
+status: to-do -> in-progress -> in-review -> approved
+---
+
 # Requirements: [Spec Name]
 
 ## Overview
