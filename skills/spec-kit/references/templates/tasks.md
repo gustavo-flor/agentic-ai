@@ -1,4 +1,4 @@
-# Tasks: [Feature Name]
+# Tasks: [Spec Name]
 
 Implementation tasks derived from the design. Complete them in order — each task should leave the codebase in a working state.
 

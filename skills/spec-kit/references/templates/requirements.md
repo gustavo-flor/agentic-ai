@@ -1,4 +1,4 @@
-# Requirements: [Feature Name]
+# Requirements: [Spec Name]
 
 ## Overview
 

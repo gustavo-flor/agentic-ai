@@ -2,7 +2,7 @@
 status: to-do -> in-progress -> in-review -> approved
 ---
 
-# Design: [Feature Name]
+# Design: [Spec Name]
 
 ## Overview
 
