@@ -29,8 +29,6 @@ Read `./references/templates/spec.md` before writing this file.
 
 Write `specs/<feature-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
 
-**Iterate:** Share the draft. Ask: "Does this capture everything? Anything missing or off?" Revise until the user approves, then move to Phase 1.
-
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
 ## Phase 1: Requirements
