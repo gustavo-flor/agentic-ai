@@ -16,9 +16,9 @@ npx skills add https://github.com/gustavo-flor/agentic-ai --skill <skill-name>
 
 ### Catalog
 
-| Skill Name | Purpose |
-|------------|---------|
-| ...        | ...     |
+| Skill Name | Purpose                                                                                                       |
+|------------|---------------------------------------------------------------------------------------------------------------|
+| spec-kit   | Guide spec-driven feature development using a structured three-phase workflow: Requirements → Design → Tasks. |
 
 ## Useful Links
 

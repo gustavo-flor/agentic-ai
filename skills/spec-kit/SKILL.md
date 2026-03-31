@@ -1,9 +1,10 @@
 ---
-name: spec-driven
+name: spec-kit
 description: |
-  Guide spec-driven feature development using a structured three-phase workflow: requirements → design → tasks.
+  Guide spec-driven feature development using a structured three-phase workflow: Requirements → Design → Tasks.
   Use this skill whenever the user wants to plan a feature, write a spec, or do structured design before coding.
-  Trigger on phrases like "let's spec this out", "I want to plan this properly", "write a PRD", "help me think through this feature", or "break this into tasks".
+  Trigger on phrases like "let's spec this out", "write a specification" or "help me think through this feature".
+argument-hint: What feature are we planning?
 ---
 
 # Spec-Driven Development
@@ -12,14 +13,12 @@ Turn a feature idea into a structured, reviewable spec before a single line of c
 
 ```
 specs/<feature-name>/
-├── requirements.md   ← Phase 1: what to build
-├── design.md         ← Phase 2: how to build it
-└── tasks.md          ← Phase 3: ordered implementation steps
+├── requirements.md   ← Phase 1: What to build
+├── design.md         ← Phase 2: How to build it
+└── tasks.md          ← Phase 3: Ordered implementation steps
 ```
 
----
-
-## Phase 0: Init
+## Phase 0: Spec
 
 Before writing anything, nail down the feature name and create the folder.
 
@@ -27,7 +26,11 @@ Before writing anything, nail down the feature name and create the folder.
 2. Create `specs/<feature-name>/` in the repo root.
 3. Tell the user which phase you're starting and what you'll produce.
 
----
+Read `references/templates/spec.md` before writing this file.
+
+Write `specs/<feature-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
+
+**Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
 ## Phase 1: Requirements
 
@@ -43,7 +46,7 @@ Group stories by user-facing goal. For each story, list concrete acceptance crit
 
 **Iterate:** Share the draft. Ask: "Does this capture everything? Anything missing or off?" Revise until the user approves, then move to Phase 2.
 
----
+**Note:** Use the YAML frontmatter to track document status.
 
 ## Phase 2: Design
 
@@ -63,7 +66,7 @@ Cover:
 
 **Iterate:** Share the draft. Ask: "Does this approach make sense? Any concerns?" Revise until approved, then move to Phase 3.
 
----
+**Note:** Use the YAML frontmatter to track document status.
 
 ## Phase 3: Tasks
 
@@ -80,17 +83,15 @@ Avoid vague tasks like "implement auth". Prefer "Add `POST /auth/login` endpoint
 
 **Iterate:** Share the list. Ask: "Does the order feel right? Anything too big or missing?" Revise until approved.
 
----
+**Note:** Use the YAML frontmatter to track document status.
 
-## Re-entering the loop
+# Re-entering the loop
 
 The user may want to revisit an earlier phase — that's fine. If requirements change after the design is written, update `requirements.md` first, then revise `design.md` and `tasks.md` for consistency. The three files should always agree.
 
 If the user drops in mid-workflow (e.g., they already have a `requirements.md`), read what exists, orient yourself, and pick up from the right phase.
 
----
-
-## References
+# References
 
 - `references/templates/requirements.md` — requirements file template (read at Phase 1)
 - `references/templates/design.md` — design file template (read at Phase 2)
