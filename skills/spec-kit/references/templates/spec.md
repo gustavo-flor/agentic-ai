@@ -1,5 +1,4 @@
 ---
-status: to-do -> in-progress -> in-review -> approved
 type: feature
 workflow: requirements-first
 ---

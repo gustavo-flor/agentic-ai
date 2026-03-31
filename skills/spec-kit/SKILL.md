@@ -22,11 +22,13 @@ specs/<feature-name>/
 
 Before writing anything, nail down the feature name and create the folder.
 
-1. If the user hasn't named the feature, propose a short slug (e.g., `user-auth`, `export-csv`). Confirm with them.
-2. Create `specs/<feature-name>/` in the repo root.
+1. If the user hasn't named the feature, propose a short slug (e.g., `user-auth`, `export-csv`).
+2. Confirm with the user the feature name (and also the slug).
+3. Add a number to the slug, it must be an increment of the last spec created.
+4. Create `specs/<feature-name>/` in the repo root. `<feature-name> = <number>-<slug>` (e.g., `001-user-auth`).
 
 Read `./references/templates/spec.md` before writing this file.
-
+  
 Write `specs/<feature-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
 
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
