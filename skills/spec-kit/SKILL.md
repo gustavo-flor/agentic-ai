@@ -13,23 +13,24 @@ Turn a feature idea into a structured, reviewable spec before a single line of c
 
 ```
 specs/<spec-name>/
-├── requirements.md   ← Phase 1: What to build
-├── design.md         ← Phase 2: How to build it
-└── tasks.md          ← Phase 3: Ordered implementation steps
+├── spec.md         ← Phase 0: Spec metadata (type, workflow)
+├── requirements.md ← Phase 1: What to build
+├── design.md       ← Phase 2: How to build it
+└── tasks.md        ← Phase 3: Ordered implementation steps
 ```
 
 ## Phase 0: Spec
 
-Before writing anything, nail down the feature name and create the folder.
+Before writing anything, nail down the spec name and create the folder.
 
-1. If the user hasn't named the feature, propose a short slug (e.g., `user-auth`, `export-csv`).
-2. Confirm with the user the feature name (and also the slug).
+1. If the user hasn't named the spec, propose a short slug (e.g., `user-auth`, `export-csv`).
+2. Confirm with the user the spec name (and also the slug).
 3. Add a number to the slug, it must be an increment of the last spec created inside `specs/` (e.g., `001`, `002`).
 4. Create `specs/<spec-name>/` in the repo root. `<spec-name> = <number>-<spec-slug>` (e.g., `001-user-auth`, `002-export-csv`).
 
 Read `./references/templates/spec.md` before writing this file.
   
-Write `specs/<spec-name>/spec.md`. This is a high-level overview of the feature, just for contextual purposes.
+Write `specs/<spec-name>/spec.md`. No details are required at this stage, just metadata.
 
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
