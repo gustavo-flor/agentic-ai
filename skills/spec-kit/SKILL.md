@@ -46,7 +46,7 @@ Write `specs/<spec-name>/requirements.md` using EARS notation for user stories:
 
 Group stories by user-facing goal. For each story, list concrete acceptance criteria — the conditions a reviewer could check to say "done".
 
-**Iterate:** Share the draft. Ask: "Does this capture everything? Anything missing or off?" Revise until the user approves, then move to Phase 2.
+**Iterate:** Share the draft. Ask: "Does this capture everything? Anything missing or off?" Revise until approved, when approved update the YAML frontmatter, then move to Phase 2.
 
 **Note:** Use the YAML frontmatter to track document status.
 
@@ -66,7 +66,7 @@ Cover:
 - Error handling and edge cases
 - Testing strategy (what to unit-test vs. integrate-test)
 
-**Iterate:** Share the draft. Ask: "Does this approach make sense? Any concerns?" Revise until approved, then move to Phase 3.
+**Iterate:** Share the draft. Ask: "Does this approach make sense? Any concerns?" Revise until approved, when approved update the YAML frontmatter, then move to Phase 3.
 
 **Note:** Use the YAML frontmatter to track document status.
 
@@ -83,7 +83,7 @@ Write `specs/<spec-name>/tasks.md` as a checkbox list. Each task should:
 
 Avoid vague tasks like "implement auth". Prefer "Add `POST /auth/login` endpoint that validates credentials and returns a JWT `[REQ-1.2]`".
 
-**Iterate:** Share the list. Ask: "Does the order feel right? Anything too big or missing?" Revise until approved.
+**Iterate:** Share the list. Ask: "Does the order feel right? Anything too big or missing?" Revise until approved, when approved update the YAML frontmatter.
 
 **Note:** Use the YAML frontmatter to track document status.
 
