@@ -3,7 +3,6 @@ name: spec-kit
 description: |
   Guide spec-driven feature development using a structured three-phase workflow: Requirements → Design → Tasks.
   Use this skill whenever the user wants to plan a feature, write a spec, or do structured design before coding.
-  Trigger on phrases like "let's spec this out", "write a specification" or "help me think through this feature".
 argument-hint: What feature are we planning?
 ---
 
@@ -92,9 +91,3 @@ Avoid vague tasks like "implement auth". Prefer "Add `POST /auth/login` endpoint
 The user may want to revisit an earlier phase — that's fine. If requirements change after the design is written, update `requirements.md` first, then revise `design.md` and `tasks.md` for consistency. The three files should always agree.
 
 If the user drops in mid-workflow (e.g., they already have a `requirements.md`), read what exists, orient yourself, and pick up from the right phase.
-
-# References
-
-- `./references/templates/requirements.md` — requirements file template (read at Phase 1)
-- `./references/templates/design.md` — design file template (read at Phase 2)
-- `./references/templates/tasks.md` — tasks file template (read at Phase 3)
