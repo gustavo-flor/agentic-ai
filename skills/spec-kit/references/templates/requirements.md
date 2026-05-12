@@ -17,6 +17,7 @@ status: to-do -> in-progress -> in-review -> approved
 **REQ-1.2** WHEN a user submits invalid credentials THE SYSTEM SHALL reject the request and display a clear error message.
 
 **Acceptance criteria:**
+
 - [ ] Valid credentials result in a session token with a configurable expiry
 - [ ] Invalid credentials return HTTP 401 with a human-readable message
 - [ ] Repeated failed attempts trigger a lockout after N tries
@@ -28,6 +29,7 @@ status: to-do -> in-progress -> in-review -> approved
 **REQ-2.2** WHEN a user follows a valid reset link THE SYSTEM SHALL allow them to set a new password.
 
 **Acceptance criteria:**
+
 - [ ] Reset links expire after 1 hour
 - [ ] Used reset links cannot be reused
 - [ ] Password must meet minimum complexity requirements

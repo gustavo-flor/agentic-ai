@@ -35,6 +35,7 @@ status: to-do -> in-progress -> in-review -> approved
 ### `POST /example`
 
 **Request:**
+
 ```json
 {
   "field": "value"
@@ -42,6 +43,7 @@ status: to-do -> in-progress -> in-review -> approved
 ```
 
 **Response (200):**
+
 ```json
 {
   "id": "uuid",
@@ -50,6 +52,7 @@ status: to-do -> in-progress -> in-review -> approved
 ```
 
 **Errors:**
+
 - `400` — validation failure
 - `401` — unauthenticated
 - `409` — conflict (e.g., duplicate)
@@ -72,11 +75,11 @@ sequenceDiagram
 
 ## Error Handling
 
-| Scenario | Behavior |
-|----------|----------|
-| Invalid input | Return 400 with field-level errors |
+| Scenario                     | Behavior                                  |
+| ---------------------------- | ----------------------------------------- |
+| Invalid input                | Return 400 with field-level errors        |
 | External service unavailable | Return 503, surface user-friendly message |
-| Unexpected exception | Log full stack trace, return 500 |
+| Unexpected exception         | Log full stack trace, return 500          |
 
 ## Testing Strategy
 

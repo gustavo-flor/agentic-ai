@@ -28,14 +28,14 @@ Before writing anything, nail down the spec name and create the folder.
 4. Create `specs/<spec-name>/` in the repo root. `<spec-name> = <number>-<spec-slug>` (e.g., `001-user-auth`, `002-export-csv`).
 
 Read `./references/templates/spec.md` before writing this file.
-  
+
 Write `specs/<spec-name>/spec.md`. No details are required at this stage, just metadata.
 
 **Note:** Use the YAML frontmatter to track spec type and workflow, currently `type: feature` and `workflow: requirements-first`.
 
 ## Phase 1: Requirements
 
-**Goal:** Capture *what* the system must do, in unambiguous terms the user can validate.
+**Goal:** Capture _what_ the system must do, in unambiguous terms the user can validate.
 
 Read `./references/templates/requirements.md` before writing this file.
 
@@ -51,13 +51,14 @@ Group stories by user-facing goal. For each story, list concrete acceptance crit
 
 ## Phase 2: Design
 
-**Goal:** Decide *how* the system will fulfill the requirements — before writing code.
+**Goal:** Decide _how_ the system will fulfill the requirements — before writing code.
 
 Read `./references/templates/design.md` before writing this file.
 
 Write `specs/<spec-name>/design.md`. Every significant decision should trace back to a requirement. Use Mermaid for sequence/flow diagrams where it adds clarity; plain prose otherwise.
 
 Cover:
+
 - High-level architecture and component responsibilities
 - Data models and storage
 - Key interfaces / API contracts
@@ -76,6 +77,7 @@ Cover:
 Read `./references/templates/tasks.md` before writing this file.
 
 Write `specs/<spec-name>/tasks.md` as a checkbox list. Each task should:
+
 - Be small enough to complete in one sitting
 - Reference the requirement(s) it satisfies (e.g., `[REQ-2]`)
 - Be ordered so earlier tasks unblock later ones (foundations first)
